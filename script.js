@@ -7,3 +7,8 @@ mouseButton.addEventListener('mouseleave', () => {
     mouseMessage.textContent = 'Dont Click Me';
 });
 
+const keyboardInput = document.getElementById('keyboardInput');
+const keyboardMessage = document.getElementById('keyboardMessage');
+keyboardInput.addEventListener('keyup', (event) => {
+    keyboardMessage.textContent = `You pressed: ${event.key}`;
+});
